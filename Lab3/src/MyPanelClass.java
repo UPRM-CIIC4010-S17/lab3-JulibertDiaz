@@ -20,8 +20,8 @@ public class MyPanelClass extends JPanel {
         int width = x2 - x1;
         int height = y2 - y1;
  
-        //Paint the background
-        g.setColor(Color.MAGENTA);
+        /*//Paint the background
+        g.setColor(Color.LIGHT_GRAY);
         g.fillRect(x1, y1, width + 1, height + 1);
         
         //Draw a border
@@ -31,6 +31,20 @@ public class MyPanelClass extends JPanel {
         //Draw a second border
         g.setColor(Color.BLACK);
         g.drawRect(x1 + 5, y1 + 5, width - 10, height - 10);
+        
+        //Draws a diagonal line \
+        g.setColor(Color.WHITE);
+        g.drawLine(x1, y1, x2, y2);
+        
+        //Draw a second Diagonal line/
+        g.setColor(Color.GREEN);
+        g.drawLine(x1 + width, y1 + 5, x2 - width, y2);
+        */
+        
+        //Draws an Oval O
+        g.setColor(Color.ORANGE);
+        //g.drawOval(x1, y1, width, height); draws an empty oval
+        g.fillOval(((getWidth()-55)/2), ((getHeight()-55)/2), 55, 55);
         
         
         }
